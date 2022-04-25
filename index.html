@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>LIT Lab's Lookahead</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/suffolk.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<!--link rel="stylesheet" href="plugin/highlight/monokai.css"-->
+		<link rel="stylesheet" href="plugin/highlight/magula.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="title">
+					<h1>LIT Lab's Lookahead</h1>
+          <h2>Bringing the Assembly Line Further</h2>
+					<img height="300" width="300" src="assets/SuffolkLITLab_logo.svg"/>
+					<h3>Bryce Willey <a href="https://twitter.com/wowitisbryce"><img style="margin: 0; vertical-align: middle;" height="40" width="40px" src="assets/twitter-blue.svg"/>@wowitisbryce </a></h3>
+					<h3><a href="https://twitter.com/suffolklitlab"><img style="margin: 0; vertical-align: middle;" height="40" width="40" src="assets/twitter-blue.svg"/>@suffolklitlab</a></h3>
+				</section>
+        <section>
+          <h2>The Assembly Line Project</h2>
+
+          <ul>
+            <li>Started in March 2020</li>
+						<li>200+ volunteers building 30 guided interviews for self represented litigants</li>
+						<li>Allowed emailing to the Appeals and Trial courts</li>
+          </ul>
+
+          <figure>
+            <img width=439 height=350 src="assets/matt-moloney-tccTcNPdkNA-unsplash.jpg" alt="The front window of a house under eviction in Boston"/>
+            <footer><small>
+              Photo by 
+              <a href="https://unsplash.com/@mattmoloney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matt Moloney</a> 
+              on <a href="https://unsplash.com/s/photos/eviction?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </small></footer>
+          </figure>
+
+					<aside class="notes">
+            I joined the Assembly Line at the end of 2020, and the project had been very successful before then!
+            But looking forward, it would need to change a few things to work in a post COVID world.
+					</aside>
+        </section>
+				<section>
+					<h2>Improvements: E-filing</h2>
+					<ul>
+						<li>long-term email filing is burdensome for courts</li>
+            <li>Same guided interviews, but:
+            <ul>
+              <li>puts info directly into court's case management system</li>
+              <li>gets info from courts's system to help users file into existing cases</li>
+            </ul> 
+            </li>
+					</ul>
+          <figure>
+          <img height="400" src="assets/undraw_efile.png"/>
+          </figure>
+				</section>
+        <section>
+          <h2>Status: E-filing</h2>
+          <ul>
+            <li>Louisiana: ready for Jefferson Parish</li>
+            <li>Illinois: paperwork being signed</li>
+						<li>Future: MA, parts of CA</li>
+					</ul>
+        </section>
+        <section>
+					<h2>Automating the Tedium</h2>
+          <ul>
+						<li>It's hard to get 200+ volunteers</li>
+            <li>most places have few dedicated forms people</li>
+          </ul>
+          <figure>
+          <img src="assets/zoom.png"/>
+          </figure>
+        </section>
+				<section>
+					<h2>Form Explorer</h2>
+          <ul>
+					  <li>Look at an entire jurisdiction's forms in bulk</li>
+            <li>Currently <a href="https://suffolklitlab.org/form-explorer/">in Alpha</a>!</li>
+            <li>Beta with lots of new states coming soon!</li>
+          </ul>
+          <figure>
+          <img height="400" src="assets/undraw_explorer.png"/>
+          </figure>
+				</section>
+        <section>
+          <h2>Prototyping: Weaver</h2>
+          <ul>
+            <li>turn those forms into ready to edit guided interview drafts in one click</li>
+          </ul>
+          <figure>
+          <img src="assets/weaver-logo.png"/>
+          </figure>
+          <img height="400" src="assets/undraw_weaver.png"/>
+        </section>
+        <section>
+          <h2>Refining: LIT Styler</h2>
+          <ul>
+            <li>get actionable feedback on where to improve your interview</li>
+            <li>Alpha of LIT Style in a few months</li>
+          </ul>
+          <figure>
+          <img height="400" src="assets/undraw_styler.png"/>
+          </figure>
+        </section>
+				<section>
+          <h2>More to Come!</h2>
+          <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-content: space-around">
+            <img src="assets/weaver-logo.png"/>
+            <img src="assets/SuffolkLITLab_logo.svg"/>
+          </div>
+
+					<aside class="notes">
+						Tyler is the biggest EFM, but there are others: Michigan, Utah (Tybera), Arizona, etc.
+
+						Some of the REST API requires quite of bit of docassemble features (specific attributes in the JSON, etc.)
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				center: false,
+				transitionSpeed: 'fast',
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
