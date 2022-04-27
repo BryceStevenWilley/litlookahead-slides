@@ -30,6 +30,10 @@
 					<img height="280" width="280" src="assets/SuffolkLITLab_logo.svg"/>
 					<h3 class="h4">Bryce Willey <a href="https://twitter.com/wowitisbryce"><img style="margin: 0; vertical-align: middle;" height="40" width="40px" src="assets/twitter-blue.svg"/>@wowitisbryce </a> | <a href="https://twitter.com/suffolklitlab"><img style="margin: 0; vertical-align: middle;" height="40" width="40" src="assets/twitter-blue.svg"/>@suffolklitlab</a> </h3>
           <h4 class="h5"><a href="https://brycewilley.xyz/litlookahead-slides">https://brycewilley.xyz/litlookahead-slides</a></h4>
+          <aside class="notes">
+            Hi, my name is Bryce Willey. I'm a clinical fellow at the Suffolk LIT Lab, and today, I'll be walking you through what the 
+            lab has been working on for the past two or so years, and what we're planning on doing for the next two.
+          </aside>
 				</section>
         <section>
           <h2>The Assembly Line Project</h2>
@@ -50,13 +54,25 @@
           </ul>
 
 					<aside class="notes">
-            The Assembly Line project started at the beginning of the pandemic, in March 2020.
-            The best way to illustrate what the project has done is with a story.
+            Our biggest project by far has been the Assembly Line project, and it's best illustrated with a true story. 
 
-            (story here)
-            
-            I joined the Assembly Line at the end of 2020, and the project had been very successful before then!
-            But looking forward, it would need to change a few things to work in a post COVID world.
+            Last summer (2021), a tenant had just lost their housing case in the trial court, and was being actively evicted
+            from their apartment. The constable was there, and furniture was being moved out. That tenant then found our Assembly Line project,
+            which is a website with a collection of guided interviews, which you've seen a few of so far. Specifically, the tenant found 
+            the "motion to stay" interview, which let you fill out a motion to send to the Appeals court to stop an eviction.
+
+            They filled out the motion to stay using our website, claiming the trial court had never addressed the fact they were protected under the CDC's
+            eviction moratorium, and sent the form to the Appeals Court through our site. Within 15 or 20 minutes, the Appeals court review the motion 
+            and granted the stay. The furniture had to be moved back into the house, successfully stopping the eviction.
+            <br/>
+            <br/>
+            This story illustrates what the Assembly Line project is: a collection of 30 or so forms, written by 200+ volunteers at the beginning of
+            the pandemic, and reviewed by subject matter experts. Those forms were written specifically for self represented litigants, people in the court
+            system without lawyers. They were mobile friendly so you could fill them out easily on a phone, and we could directly email them to the Appeals court,
+            thanks to an emergency order given at the start of the pandemic.
+
+            I joined the Assembly Line at the end of 2020, and much of the work was completed before then!
+            I viewed my position as making the Assembly Line easy to use in many different places in different contexts, more than just Massachusetts during the pandemic.
 					</aside>
         </section>
 				<section>
@@ -74,7 +90,15 @@
           <img height="320" src="assets/undraw_efile.png"/>
           </figure>
           <aside class="notes">
-            The first of those improvements had to do with e-filing.
+            The first of those improvements had to do with e-filing. As I mentioned in the story, the tenant was able to email their forms directly 
+            to the Appeals court. Email filing is good, but in the long term it's a burden for courts. They need to have a completely separate system
+            for handling incoming emails separate from their existing case management system, and if they do accept the case, it needs to be manually copy-pasted
+            into the case management system.
+            <br/>
+            <br/>
+            So for the past year and a half, I've been working so that behind the scenes, all of our existing guided interviews are able to directly e-file into courts' case
+            management systems. Additionally, these interviews can get information from the courts case management systems, letting users file into already existing cases,
+            pre-filling information like the names of other case parties.
           </aside>
 				</section>
         <section>
@@ -89,7 +113,7 @@
             <img height="200" src="assets/IL-flag.jpg" alt="The flag of Illinois"/>
           </figure>
           <aside class="notes">
-            Currently, our e-filing system is ready in Jefferson Parish, Louisiana, paper work is being 
+            Currently, our e-filing system is ready in Jefferson Parish, Louisiana, the paper work is being 
             signed as we speak for Illinois, and we're working to bring this technology to the Massachusetts Appeals court,
             and parts of California.
           </aside>
@@ -105,6 +129,15 @@
           </figure>
           <aside class="notes">
 
+            The other part off the Assembly Line project that we've been working on improving is the automating the tedium.
+            So I mentioned that we had over 200+ volunteers for the project, which was incredible. But the downside is that
+            it's really hard to get 200+ volunteers! We were incredibly lucky, starting at the beginning of the pandemic when
+            a lot of people had free time that they wanted to use to help others.
+            <br/>
+            <br/>
+            Since not every legal aid or court system can get that many volunteers, we've been working on a set of tools that can take
+            some of the more tedious work that the volunteers did, and make it so one or two people in a legal aid or court system can
+            do a lot of the same work that those volunteers did, but faster.
           </aside>
         </section>
 				<section>
@@ -123,8 +156,9 @@
           </figure>
           <aside class="notes">
             The first of these tools is the Form Explorer, which lets you look at all of the existing forms in an
-            entire jurisdiction, all at once to get insights about how your forms work together, and if some of your
-            forms are a little too similar.
+            entire jurisdiction, all at once to get insights about how your forms work together, and how they might not work well together, 
+            if some of your forms are a little redundant. Currently it's in alpha, and we'll be releasing a beta with 26 states soon, thanks
+            to some great web scraping work by Suffolk undergraduate students in the lab, Pavlos and Lera.
           </aside>
 				</section>
         <section>
@@ -137,8 +171,9 @@
             <img height="400" src="assets/undraw_weaver.png"/>
           </figure>
           <aside class="notes">
-            The backbone of the Assembly Line has been the Weaver, which lets you turn those PDF or DOCX forms
-            into a guided interview that you can run right away.
+            The next tool, which has been the backbone of the Assembly Line, is the Weaver. It lets you turn those PDF or DOCX forms
+            into a guided interview that you can run right away, in just a few clicks, one click if your willing to let our system make
+            some questionable choices.
           </aside>
         </section>
         <section>
@@ -151,8 +186,9 @@
             <img height="400" src="assets/undraw_styler.png"/>
           </figure>
           <aside class="notes">
-            Finally, we've started working on what we're calling the LIT Styler. It gives you actionable feedback, like spell checks and readability
-            scores, to improve your interview.
+            Finally, we've started working on what we're calling the LIT Styler. It gives you actionable feedback, like spell checks, readability
+            scores, and a slew of other metrics, to improve your interview. We have a prototype, and will be releasing a much more fully featured
+            in the coming months.
           </aside>
         </section>
 				<section>
@@ -187,7 +223,7 @@
 				center: false,
 				transitionSpeed: 'fast',
         // Uncomment after presentation
-        // showNotes: true,
+        showNotes: true,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
